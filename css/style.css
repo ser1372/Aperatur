@@ -402,6 +402,14 @@ body {
   background: url(../assets/bg-mountains.png) center 0 no-repeat;
   background-size: 100%;
 }
+.mountains__second {
+  background: url(../assets/bg-list.png) center 0 no-repeat;
+  background-size: 100% 100%;
+}
+.mountains__third {
+  background: url(../assets/bg-sky.png) center 0 no-repeat;
+  background-size: 100% 100%;
+}
 .mountains__container {
   position: relative;
   width: 300px;
@@ -470,6 +478,18 @@ body {
     width: 200px;
     left: 20%;
   }
+
+  .mountains__title {
+    margin-top: -60px;
+  }
+
+  .mountains__title > h2 {
+    font-size: 10px;
+  }
+
+  .mountains__title > p {
+    font-size: 10px;
+  }
 }
 .cage {
   width: 100%;
@@ -498,7 +518,8 @@ body {
 }
 .cage__content {
   color: white;
-  width: 37.5rem;
+  max-width: 31rem;
+  min-width: 13rem;
   height: 19.625rem;
 }
 .cage__content::first-line {
@@ -539,4 +560,87 @@ body {
 }
 .cage__containerSecond {
   width: 45rem;
+}
+.cage__item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.clients {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 12.5rem;
+}
+.clients h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 105%;
+  color: #ffffff;
+}
+.clients p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 125%;
+  color: #c0c0c0;
+}
+.clients__container {
+  width: 75rem;
+  height: 17.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.clients__maintitle {
+  width: 37.5rem;
+  height: 5.125rem;
+}
+.clients__maintitle {
+  text-align: center;
+}
+.clients__logos {
+  width: 73rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .clients__container {
+    width: 57rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clients__container {
+    width: 48rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .clients__container {
+    width: 19rem;
+  }
 }
