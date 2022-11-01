@@ -592,6 +592,20 @@ body {
   line-height: 125%;
   color: #c0c0c0;
 }
+.clients button {
+  width: 9.625rem;
+  height: 2.625rem;
+  border-radius: 0.875rem;
+  margin-top: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  /* identical to box height, or 125% */
+  text-align: center;
+  letter-spacing: 0.025rem;
+  color: #000000;
+}
 .clients__container {
   width: 75rem;
   height: 17.5rem;
